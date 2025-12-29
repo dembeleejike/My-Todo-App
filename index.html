@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Todo App</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Todo List</h1>
+ <!-- The div for inputs (html)-->
+    <div class="content">
+      <input type="text" placeholder="Todo Name" class="js-textTodo">
+      
+      <input type="date" class="js-dateTodo">
+      
+      <button
+      onclick="
+      addTodo();
+      "
+      
+      >Add Todo</button>
+
+      
+    </div>
+ <!-- The div for aligning (js)-->
+ <div>
+   <ul class="js-todoContainer">
+
+   </ul>
+   
+ </div>   
+      <div class="js-last">
+        
+      </div>
+    
+    
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>

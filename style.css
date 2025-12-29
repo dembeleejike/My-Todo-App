@@ -1,0 +1,121 @@
+/*
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 15pt;
+    background: #fff;
+    user-select: none;
+}
+.container{
+    font-family: sans-serif;
+    
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    color: red;
+    
+}
+*/
+* { 
+    box-sizing: border-box; 
+    
+}
+    
+body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      user-select: none;
+    }
+.container {
+      width: 100%;
+      max-width: 500px;
+      background: #020617;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,.35);
+      padding: 40px 10px;
+    }
+h1 {
+      margin: 0 0 16px;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.content input{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+}
+.content button{
+    padding: 6px;
+    background: green;
+    color: white;
+    border-radius: 5px;
+}
+
+/*
+.todo-text {
+    font-weight: bold;
+    white-space: nowrap;            /* prevents text from wrapping 
+    width: 20%;
+}
+
+.todo-date {
+    color: gray;
+    font-size: 0.9em;
+    width: 25%;
+}
+*/
+.todo-text {
+    
+    flex: 1 1 150px; /* grows, shrinks, min width 150px */
+
+}
+
+.todo-date {
+    color: gray;
+    font-size: 0.9em;
+    flex: 0 0 auto; /* date stays its natural width */
+    white-space: nowrap;
+}
+.js-last{
+
+    font-size: 0.9em;
+}
+.List {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    gap: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    flex-wrap: wrap; /* allows items to wrap if screen is small */
+}
+.js-todoContainer {
+    padding: 0;   /* remove default UL padding */
+    margin: 0;
+    list-style: none; /* optional */
+    
+}
+.button-group-right{
+    display: flex;
+    padding: 10px;
+}
